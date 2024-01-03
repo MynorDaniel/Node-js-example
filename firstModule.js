@@ -1,3 +1,14 @@
-const name = "Mynor"
+const app = require("./app");
 
-module.exports = {name}
+
+function showVar(){
+    console.log(app.globalVar);
+}
+function modifyVar(){
+    app.globalVar = "new value"
+    console.log(app.globalVar)
+}
+module.exports = {
+    showVar,
+    modifyVar
+}
